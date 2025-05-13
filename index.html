@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/digital-7-(mono).ttf2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Minesweeper (ES5)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <div class="container">
+      <div class="game-header">
+        <div class="game-header-title">
+          <span class="game-icon">✹</span>
+          <h2>Minesweeper</h2>
+        </div>
+        <div class="game-header-controls">
+          <div class="control-square">_</div>
+          <div class="control-square">◻️</div>
+          <div class="control-square">X</div>
+        </div>
+      </div>
+      <div class="game-options">
+        <div class="menu-bar">
+          <div class="menu-item">
+            Game
+            <div class="menu-dropdown">
+              <div class="menu-option" data-action="new">New</div>
+              <div class="menu-separator"></div>
+              <div class="menu-option">Difficulty
+                <div class="submenu">
+                  <div class="menu-option" data-difficulty="easy"><span class="tick">☑</span> Easy</div>
+                  <div class="menu-option" data-difficulty="medium"><span class="tick">☑</span> Medium</div>
+                  <div class="menu-option" data-difficulty="hard"><span class="tick">☑</span> Hard</div>
+                  <div class="menu-option" data-difficulty="expert"><span class="tick">☑</span> Expert</div>
+                </div>
+              </div>
+              <div class="menu-option">Grid Size
+                <div class="submenu">
+                  <div class="menu-option" data-size="small"><span class="tick">☑</span> 8x8</div>
+                  <div class="menu-option" data-size="medium"><span class="tick">☑</span> 10x10</div>
+                  <div class="menu-option" data-size="large"><span class="tick">☑</span> 16x16</div>
+                  <div class="menu-option" data-size="huge"><span class="tick">☑</span> 20x20</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game-body">
+        <div id="game-bar">
+          <div id="mine-counter" class="digit-box">010</div>
+          <div id="face" class="face-btn">🙂</div>
+          <div id="timer" class="digit-box">000</div>
+        </div>
+        <div id="game"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
